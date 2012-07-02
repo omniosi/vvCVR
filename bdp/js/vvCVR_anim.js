@@ -23,4 +23,28 @@ $(document).ready(function(){
 		});
 	});
 	/*$('#vvCVR').delay(2000).animate({background:'none'},500);*/
+	$('#play-pause').click(function(){
+		$('#play-pause img').toggleClass('on');
+		if($('#play-pause img').hasClass('on')){
+			$("audio")[0].pause();
+	    $("#vinyl").rotate({animateTo:360,callback:function(){
+		  	$(this).stopRotate()  
+	    }});
+/* 			console.log("paused"); */
+		}else{
+			$("audio")[0].play();
+	    rotation();
+/* 			console.log("replay"); */
+		}
+	});
+	$('#volume').click(function(){
+		$('#volume img').toggleClass('on');
+		if($('#volume img').hasClass('on')){
+			$("audio")[0].volume=0;
+/* 			console.log("volume = 0"); */
+		}else{
+			$("audio")[0].volume=1;
+/* 			console.log("volume = 1"); */
+		}
+	});
 });

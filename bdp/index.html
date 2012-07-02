@@ -6,26 +6,39 @@
 	<meta name="author" content="ornette omni osi coleman" />
 	<meta charset="utf-8">
 	<title>viral vinyl: My Philosophy</title>
-	<script src="js/modernizr.custom.66959.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800|Alegreya:400italic,700italic,900italic,400,900,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/vvCVR_style.css" type="text/css">
+	<script src="js/modernizr.custom.66959.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript">window.JQuery || document.write('<script type="text/javascript" src="js/jquery_1-7-2.js"><\/script>');</script>
-	<script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+	<script src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
 	<script src="js/vvCVR_anim.js"></script>
 	<script src="js/vvCVR_audio.js"></script>
 	<link rel="icon" type="image/png" href="http://www.viralvinyl.com/cvrs/bdp/img/vvICON_32x32.png" />
+<!-- 	Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33068109-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </head>
 <body>
 	<div id="vvCVR">
 		<div id="block"></div>
 		<div id="cover">
+			<img src="img/vvCVR_bdp.gif" alt="vvCVR_bdp" width="606" height="600">
 			<div id="credits"></div>
 			<a href="http://omnio.us/" target="_blank" class="link"></a>
 			<a href="http://youtu.be/zzU7jJBMElM?t=34s" class="btn">watch the video</a>
 		</div>
 		<div id="intro">
-			<div id="vvLogo"></div>
+			<div id="vvLogo" title="viral vinyl"></div>
 			<p id="vvPresents">presents:</p>
 		</div>
 		<div id="vinyl">
@@ -33,5 +46,9 @@
 		</div>
 	</div>
 	<audio>unsupported browser</audio>
+	<div id="audio-controls">
+		<a href="#" id="play-pause"><img src="img/vvCVR_play-pause.png" alt="vvCVR_play-pause" width="50" height="100"></a>
+		<a href="#" id="volume"><img src="img/vvCVR_audio_on-off.png" alt="vvCVR_audio_on-off" width="50" height="100"></a>
+	</div>
 </body>
 </html>

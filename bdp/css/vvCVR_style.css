@@ -25,24 +25,28 @@ p{
 	width:602px;
 	height:600px;
 	/*background: rgba(0,0,0,.5);*/
-	background: url(../img/vvCVR_bdp.gif) no-repeat;
+/* 	background: url(../img/vvCVR_bdp.gif) no-repeat; */
 	z-index: 100;
 	font-family: 'Alegreya', serif;
 	font-weight: 900;
 	color: rgba(255,255,0,.6);
   -webkit-box-shadow:  0px 0px 10px 1px rgba(0, 0, 0, .35);
   box-shadow:  0px 0px 10px 1px rgba(0, 0, 0, .35);
+  overflow: hidden;
 }
 #credits{
 	background: url(../img/vvCVR_bdp_credits.gif) no-repeat;
 	width:602px;
 	height: 600px;
+	position: absolute;
+	top:0;
+	left:0;
 }
 .btn{
 	position: relative;
 	background: #000000;
 	padding: 10px 20px;
-	bottom:32px;
+	bottom:39px;
 	left:415px;
 	color:#fff;
 	text-decoration: none;
@@ -91,4 +95,38 @@ p{
 	/*left:190px;*/ /* centered*/
     -webkit-border-radius: 300px;
     border-radius: 300px;
+}
+#audio-controls{
+	position: absolute;
+	top:0;
+	right:0;
+	width:106px;
+	height:50px;
+	z-index: 1000;
+}
+#play-pause,
+#volume{
+	float: left;
+	width:50px;
+	height:50px;
+	overflow: hidden;
+	position: relative;
+	top:0;
+	background-color: #efefef;
+}
+#volume{
+	float: right;
+}
+#play-pause img,
+#volume img{
+	position: relative;
+	top:-50px;
+}
+.on{
+	position: relative;
+	top:0!important;
+}
+#play-pause:hover,
+#volume:hover{
+	background-color: #639ec8;
 }
