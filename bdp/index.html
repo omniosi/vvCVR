@@ -1,9 +1,12 @@
 <!Doctype html>
-	<html>
+	<html itemscope itemtype="http://schema.org/Creative Work">
 <head profile="http://www.w3.org/2005/10/profile">
 	<meta name="description" content="viralvinyl covers project. Made for the fun of it. First installment: BDP - 'My Philosophy'" />
 	<meta name="keywords" content="viral vinyl animation music bdp krs-one my philosophy covers" />
 	<meta name="author" content="ornette omni osi coleman" />
+	<meta itemprop="name" content="viral vinyl Covers - BDP">
+	<meta itemprop="description" content="viral vinyl presents: Covers - the first installment is BDP">
+	<meta itemprop="image" content="http://www.viralvinyl.com/cvrs/bdp/img/vvCVR_bdp.gif">
 	<meta charset="utf-8">
 	<title>viral vinyl: My Philosophy</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800|Alegreya:400italic,700italic,900italic,400,900,700' rel='stylesheet' type='text/css'>
@@ -29,16 +32,39 @@
 </script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>
+/* facebook */
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=261866720517741";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+/* twitter */
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+/* google plus */
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 	<div id="vvCVR">
 		<div id="block"></div>
 		<div id="cover">
 			<img src="img/vvCVR_bdp.gif" alt="vvCVR_bdp" width="606" height="600">
-			<div id="credits"></div>
+			<div id="credits">
+				<p>KRS-ONE</p>
+				<p>'My philosophy'</p>
+				<p>By All Means Necessary</p>
+			</div>
 			<a href="http://omnio.us/" target="_blank" class="link"></a>
 			<a href="http://youtu.be/zzU7jJBMElM?t=34s" class="btn">watch the video</a>
 		</div>
 		<div id="intro">
-			<div id="vvLogo" title="viral vinyl"></div>
+			<div id="vvLogo" title="viral vinyl"><img src="img/vvLogo.png" alt="vvLogo" width="215" height="89"></div>
 			<p id="vvPresents">presents:</p>
 		</div>
 		<div id="vinyl">
@@ -49,6 +75,11 @@
 	<div id="audio-controls">
 		<a href="#" id="play-pause"><img src="img/vvCVR_play-pause.png" alt="vvCVR_play-pause" width="50" height="100"></a>
 		<a href="#" id="volume"><img src="img/vvCVR_audio_on-off.png" alt="vvCVR_audio_on-off" width="50" height="100"></a>
+	</div>
+	<div id="social">
+		<div class="fb-like" data-href="http://www.viralvinyl.com/cvrs/bdp/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+		<div class="g-plusone" data-annotation="none" data-href="http://www.viralvinyl.com/cvrs/bdp/"></div>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.viralvinyl.com/cvrs/bdp/" data-text="viral vinyl presents: Covers, the first installment is BDP" data-via="omniosi" data-hashtags="viral-vinyl-bdp">Tweet</a>
 	</div>
 </body>
 </html>
