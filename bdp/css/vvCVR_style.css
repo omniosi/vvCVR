@@ -110,7 +110,7 @@ p{
 	position: absolute;
 	top:0;
 	right:0;
-	width:106px;
+	width:103px;
 	height:50px;
 	z-index: 1000;
 }
@@ -137,7 +137,8 @@ p{
 	top:0!important;
 }
 #play-pause:hover,
-#volume:hover{
+#volume:hover,
+#vvcReplay:hover{
 	background-color: #639ec8;
 }
 #social{
@@ -155,4 +156,12 @@ p{
 #___plusone_0{
 	width:43px!important;
 	vertical-align: top!important;
+}
+#vvcReplay{
+	position: absolute;
+	top:53px;
+	right:0;
+	width:50px;
+	height:50px;
+	background-color: #efefef;
 }

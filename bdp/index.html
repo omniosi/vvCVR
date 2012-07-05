@@ -15,8 +15,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript">window.JQuery || document.write('<script type="text/javascript" src="js/jquery_1-7-2.js"><\/script>');</script>
 	<script src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
-	<script src="js/vvCVR_anim.js"></script>
-	<script src="js/vvCVR_audio.js"></script>
+	<script src="js/vvCVR_script.js"></script>
 	<link rel="icon" type="image/png" href="http://www.viralvinyl.com/cvrs/bdp/img/vvICON_32x32.png" />
 <!-- 	Google Analytics -->
 <script type="text/javascript">
@@ -34,7 +33,7 @@
 <body>
 <div id="fb-root"></div>
 <script>
-/* facebook */
+/* !facebook */
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -42,9 +41,9 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=261866720517741";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-/* twitter */
+/* !twitter */
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-/* google plus */
+/* !google plus */
   (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
     po.src = 'https://apis.google.com/js/plusone.js';
@@ -76,6 +75,7 @@
 		<a href="#" id="play-pause"><img src="img/vvCVR_play-pause.png" alt="vvCVR_play-pause" width="50" height="100"></a>
 		<a href="#" id="volume"><img src="img/vvCVR_audio_on-off.png" alt="vvCVR_audio_on-off" width="50" height="100"></a>
 	</div>
+	<a id="vvcReplay" href="#" onclick="vvCVR_replay();"><img src="img/vvCVR_replay_btn.png" alt="vvCVR_replay_btn" width="50" height="50"></a>
 	<div id="social">
 		<div class="fb-like" data-href="http://www.viralvinyl.com/cvrs/bdp/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
 		<div class="g-plusone" data-annotation="none" data-href="http://www.viralvinyl.com/cvrs/bdp/"></div>
